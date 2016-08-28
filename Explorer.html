@@ -134,10 +134,8 @@
   <body ng-controller="mainCtrl">
     <div style="height:{{explorerHeight}}px" class="column" ng-repeat="entry in breadcrumb">
       <div ng-repeat="item in entry" class="{{item.type==0 ? 'file' : 'folder'}}" title="{{'Name: '+item.name+'\nCreated: '+item.created+'\nLast Updated: '+item.updated}}" ng-dblclick="open(item.type,item.url)" ng-click="getChildren($event,item.type,item.id,item.level)">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAMlJREFUOI2d0zFqQkEYBOBPsfEGBlJKytjbWKYMiIW5SiRgSDyJjYWNJ5CAF4hobRsPIIKIWCzGh+z6fE61uzPMDv/slpzxhA9UxTHEJMH9C2oJrosl2pdEObOu4u/KBZ94uTQpx7VRNPGDAV6LGkwxw06Y01tMNC6QZlQ0QRKVyNkz3hP6L6GNqwZzoba7EzygldBPsc4zOGCfMDjckmCtQCMxg4bQdQx9LPIMftG5NUH2HWyFAebhEZvTppQh6uhJf+cTNvjGCo5Fhx7hZo7d6QAAAABJRU5ErkJggg==
-" ng-if="item.type==0"/>
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTCtCgrAAAAAZ0lEQVQ4T2OgBlAF4k1AfACK9wCxCxATDWqB+D8a/gzEQUDsgAebATEjEDM0ADG6AcTiNCCmyACQXgYFIMbmRGIwSC/lLhg1YDAYUIEkQCquBGIGMSBeBcSwzEQs3gDE0kBMCWBgAAA8866j3m/ilwAAAABJRU5ErkJggg==
-" ng-if="item.type==1"/>&nbsp;
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAMlJREFUOI2d0zFqQkEYBOBPsfEGBlJKytjbWKYMiIW5SiRgSDyJjYWNJ5CAF4hobRsPIIKIWCzGh+z6fE61uzPMDv/slpzxhA9UxTHEJMH9C2oJrosl2pdEObOu4u/KBZ94uTQpx7VRNPGDAV6LGkwxw06Y01tMNC6QZlQ0QRKVyNkz3hP6L6GNqwZzoba7EzygldBPsc4zOGCfMDjckmCtQCMxg4bQdQx9LPIMftG5NUH2HWyFAebhEZvTppQh6uhJf+cTNvjGCo5Fhx7hZo7d6QAAAABJRU5ErkJggg==" ng-if="item.type==0"/>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTCtCgrAAAAAZ0lEQVQ4T2OgBlAF4k1AfACK9wCxCxATDWqB+D8a/gzEQUDsgAebATEjEDM0ADG6AcTiNCCmyACQXgYFIMbmRGIwSC/lLhg1YDAYUIEkQCquBGIGMSBeBcSwzEQs3gDE0kBMCWBgAAA8866j3m/ilwAAAABJRU5ErkJggg==" ng-if="item.type==1"/>&nbsp;
         {{item.name}}
       </div>
     </div>
@@ -161,7 +159,8 @@
 				<br/>
 				<a href="http://funbutlearn.com" target="_blank" style="text-decoration:none;color:#3D81EF">Fun But Learn
 					<br/>
-				</td>
+                </a>
+			</td>
 				<td style="border-left: 1px solid #c0c0c0">
                     A blog of
 					<br/>
